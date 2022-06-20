@@ -1,0 +1,216 @@
+/* Formats entire page */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+main {
+    max-width: 88%;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch; /*fills divs*/
+    margin-bottom: 30px;
+}
+
+section > h1 {
+    flex: 0 0 23%;
+    text-align: right;
+    padding-right: 20px;
+    border-right: 3px solid black;
+}
+
+section > div {
+    flex: 0 0 77%;
+    padding-left: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item {
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em); /* google flex basis*/
+    margin: 0.5em; /* google em*/
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0; /*goes clockwise from top*/
+    background-size: 150%;
+    background-color: #fac543;
+    border: 5px solid black;
+}
+
+.flex-item div {
+    padding: 8px 10px;
+}
+
+.flex-item:first-child {
+    min-height: 300px;
+    flex-basis: 100%; /*lines it up*/
+
+}
+
+.project-1 {
+    background-image: url("../images/Future\ Apps.jpg");
+    /*set alt here*/
+}
+
+/* img.bg {
+    height: 180px;
+    padding-top: 105px;
+    padding-left: 140px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 50%;
+}
+*/
+
+header {
+    background-color: lightgray;
+    position: fixed;
+    padding-top: 0;
+    text-align: right;
+    width: 100%;
+    height: 50px;
+}
+
+/* header link font  */
+/* a {
+    text-decoration: none;
+    color: black;
+} */
+
+
+/* header font information */
+/* header li {
+    text-align: right;
+    display: inline;
+    padding: 20px;
+    font-size: 19px;
+    margin-top: 20px;
+} */
+
+
+/* name font size */
+/* h1 {
+    font-size: 90px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+} */
+
+/* formats section titles to wrap
+section h1, main h1 {
+    flex: 0 2 0;
+    padding-bottom: 0px;
+    margin-top: 20px;
+    padding-top: 50px;
+    padding-left: 100px;
+    font-size: 45px;
+    position: relative;
+    text-align: left;
+    display: inline-block;
+} */
+
+/* app 1 text */
+/* .first-title {
+    padding-left: 320px;
+} */
+
+/* app name font information */
+/* figure h2 {
+    text-align: left;
+    position: relative;
+    padding: 20px;
+}
+ */
+
+/* spacing between thumbnails */
+/* figure img {
+    padding-bottom: 20px;
+    padding-right: 20px;
+} */
+
+/* formats thumbnails to wrap */
+/* .portfolio-thumbnails {
+    flex: 1 0 0;
+    padding-left: 320px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100px;
+    transition: .25s ease-in-out;
+}  */
+
+
+
+/*formats font to the right*/
+/* .text-right {
+    text-align: right;
+    margin-top: 12px;
+} */
+
+
+/* formats font to the center */
+/* .is-centered {
+    text-align: center;
+} */
+
+/* .about-me {
+    padding-left: 320px;
+    padding-right: 300px;
+    display: block;
+    text-align: justify;
+    font-size: 19px;
+    padding-bottom: 30px;
+
+} */
+
+/* .contact-me {
+    padding-left: 320px;
+    text-align: left;
+    display: inline;
+    font-size: 24px;
+} */
+
+/* allows first app to be bigger */
+/* #first-app {
+    padding-left: 320px;
+    padding-top: 0px;
+    width: 55%;
+    display: block;
+    position: relative;
+    
+}  */
+
+/* .contact-bg {
+    width: 100%;
+    background-color: #fac543;
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+.name-space {
+    padding-top: 180px;
+} */
+
+/* sends header links to corresponding section */
+/* #about-me-anchor {
+}
+
+#portfolio-anchor {
+}
+
+#footer-anchor {
+} */ 
