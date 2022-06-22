@@ -3,6 +3,7 @@
 <head>
       <meta charset="UTF-8">
       <title>A. C. Portfolio</title>
+      <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> *!* STYLE RESET *!* -->
       <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 
@@ -10,40 +11,40 @@
     <header id="header">
         <nav>
           <ul class="text-right">
-            <li><a href="#about-me-anchor">About Me</a></li>
+            <li><a href="#">About Me</a></li>
             <li><a href="#portfolio-anchor">Portfolio</a></li>
             <li><a href="#contact-anchor">Contact</a></li>
           </ul>
         </nav>
     </header>
     
+    <div id="name-div" class="name">
+      <h1> A. Leighton C.</h1>
+    </div>
+
     <main>
-    <!-- <a href="#header"><img src="./assets/images/avatar 1.jpg" class="bg"/></a> -->
-  
-    <h1 class="is-centered name-space"> A. Leighton C.</h1>
-
-
-
+      <a role="img" aria-label="avatar" class="avatar"><img src="./assets/images/avatar 1.jpg" height="100" width="100"/></a>
+      <a id="transp-div" href="#name-div"></a>
     <section>
-      <h1 id="about-me-anchor">About Me</h1>
+      <h1 id="#">About Me</h1>
         <div>
           <p class="about-me">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam tempor orci eu lobortis. Sed egestas egestas fringilla phasellus faucibus scelerisque. Volutpat ac tincidunt vitae semper quis lectus. Augue mauris augue neque gravida in fermentum et sollicitudin. In nibh mauris cursus mattis molestie. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Arcu vitae elementum curabitur vitae nunc. Erat pellentesque adipiscing commodo elit at imperdiet dui. Ornare suspendisse sed nisi lacus sed viverra tellus. At in tellus integer feugiat scelerisque varius morbi enim nunc. Est ullamcorper eget nulla facilisi etiam dignissim. A iaculis at erat pellentesque adipiscing commodo elit at. Felis bibendum ut tristique et egestas. Odio eu feugiat pretium nibh ipsum consequat nisl. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Sagittis id consectetur purus ut faucibus.</p>
         </div>
     </section>
 
     <section>
-      <h1 id="portfolio-anchor">Portfolio</h1>
+      <h1 id="work"><span id="portfolio-anchor"></span>Portfolio</h1>
       <div class="flex-container">
 
-        <a href="#" class="flex-item project-1">
-          <h2 id="first-app">1</h2>
+        <a href="https://andcooke.github.io/mini-project-1/" target="_blank" class="flex-item project-1">
+          <div><h2>Contact Landing Page</h2></div>
         </a>
 
         <a href="#" class="flex-item project-2">
           <h2>2</h2>
         </a>
 
-        <a href="#" class="flex-item project-3">
+        <a role="img" aria-label="" href="#" class="flex-item project-3">
           <h2>3</h2>
         </a>
 
@@ -60,18 +61,18 @@
       
 
     <section class="contact-bg">
-      <h1 id="contact-anchor">Contact</h1>
+      <h1 id="contact"><span id="contact-anchor"></span>Contact</h1>
       <div>
-        <ul>
-          <li class="contact-me">281·330·8004</li>
-          <li class="contact-me">andcooke@duck.com</li>
-          <li class="contact-me">fax me</li>
+        <ul id="list-items">
+          <li>281·330·8004</li>
+          <li>andcooke@duck.com</li>
+          <li>fax me</li>
         </ul>
       </div>
     </section>
 
   </main>
-  <footer></footer>
+  <footer><span>&copy; 2022 Andrew Cooke</span></footer>
 </body>
 
 </html>

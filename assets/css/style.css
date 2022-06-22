@@ -1,12 +1,12 @@
-/* Formats entire page */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 main {
-    max-width: 88%;
+    max-width:90%;
     margin: 0 auto;
 }
 
@@ -23,7 +23,6 @@ section > h1 {
     flex: 0 0 23%;
     text-align: right;
     padding-right: 20px;
-    border-right: 3px solid black;
 }
 
 section > div {
@@ -40,30 +39,53 @@ section > div {
 .flex-item {
     min-height: 150px;
     max-height: 150px;
-    flex-basis: calc(50% - 1em); /* google flex basis*/
-    margin: 0.5em; /* google em*/
+    flex-basis: calc(50% - 1em);
+    margin: .5em;
+    text-decoration: none;
     display: flex;
     align-items: flex-end;
-    padding: 0 0 20px 0; /*goes clockwise from top*/
-    background-size: 150%;
+    padding: 0 0 70px 0; /*changes box size*/
+    background-size: 100%;
+    background-position: no-repeat;
     background-color: #fac543;
-    border: 5px solid black;
+    /* !!! border: 5px solid black; without border items align */
 }
 
 .flex-item div {
-    padding: 8px 10px;
+    padding: 8px 10px; /*unsure what this is doing*/
+    background-color: white;
 }
 
 .flex-item:first-child {
     min-height: 300px;
     flex-basis: 100%; /*lines it up*/
-
 }
 
 .project-1 {
+    background-image: url("../images/contact-me-landing-page.png");
+    /*set alt here*/
+}
+
+.project-2 {
     background-image: url("../images/Future\ Apps.jpg");
     /*set alt here*/
 }
+
+.project-3 {
+    background-image: url("../images/Future\ Apps.jpg");
+    /*set alt here*/
+}
+
+.project-4 {
+    background-image: url("../images/Future\ Apps.jpg");
+    /*set alt here*/
+}
+
+.project-5 {
+    background-image: url("../images/Future\ Apps.jpg");
+    /*set alt here*/
+}
+
 
 /* img.bg {
     height: 180px;
@@ -86,28 +108,74 @@ header {
 }
 
 /* header link font  */
-/* a {
+ a {
     text-decoration: none;
     color: black;
-} */
+}
+
+#work span {
+    position: relative;
+    top: -82px;
+}
+
+.text-right {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding-right: 20px;
+}
 
 
 /* header font information */
-/* header li {
-    text-align: right;
-    display: inline;
-    padding: 20px;
-    font-size: 19px;
-    margin-top: 20px;
-} */
+header nav ul li {
+    padding: 17px;
+    font-size: 20px;
+    margin-top: 2px;
+}
 
+#transp-div {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+}
 
 /* name font size */
-/* h1 {
-    font-size: 90px;
-    padding-top: 50px;
+body div h1 {
+    font-size: 60px;
+    padding-left: 20px;
+} 
+
+.name {
+    padding-top: 100px;
     padding-bottom: 40px;
-} */
+}
+
+.avatar {
+    position: fixed;
+    z-index: -1;
+}
+
+#list-items {
+    list-style: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    min-height: 50px;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-item,
+    .flex-item:first-child {
+        flex-basis: 100%
+    }
+    .flex-item:first-child {
+        min-height: 150px;
+    }
+}
 
 /* formats section titles to wrap
 section h1, main h1 {
