@@ -3,12 +3,12 @@
 <head>
       <meta charset="UTF-8">
       <title>A. C. Portfolio</title>
-      <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> *!* STYLE RESET *!* -->
+      <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> 
       <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 
   <body>    
-    <header id="header">
+    <header class="flex-center" id="header">
         <nav>
           <ul class="text-right">
             <li><a href="#">About Me</a></li>
@@ -17,16 +17,19 @@
           </ul>
         </nav>
     </header>
-    
-    <div id="name-div" class="name">
-      <h1> A. Leighton C.</h1>
+
+
+    <div>
+      <div class="flex-center" id="return-location">
+        <a role="img" aria-label="avatar" id="avatar"><img src="./assets/images/avatar 1.jpg" height="150" width="150"/></a>
+        <a href="#" id="transp-div"></a>
+      </div>
+    <h1 class="name"> A. Leighton C.</h1>
     </div>
 
     <main>
-      <a role="img" aria-label="avatar" class="avatar"><img src="./assets/images/avatar 1.jpg" height="100" width="100"/></a>
-      <a id="transp-div" href="#name-div"></a>
     <section>
-      <h1 id="#">About Me</h1>
+      <h1>About Me</h1>
         <div>
           <p class="about-me">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam tempor orci eu lobortis. Sed egestas egestas fringilla phasellus faucibus scelerisque. Volutpat ac tincidunt vitae semper quis lectus. Augue mauris augue neque gravida in fermentum et sollicitudin. In nibh mauris cursus mattis molestie. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Arcu vitae elementum curabitur vitae nunc. Erat pellentesque adipiscing commodo elit at imperdiet dui. Ornare suspendisse sed nisi lacus sed viverra tellus. At in tellus integer feugiat scelerisque varius morbi enim nunc. Est ullamcorper eget nulla facilisi etiam dignissim. A iaculis at erat pellentesque adipiscing commodo elit at. Felis bibendum ut tristique et egestas. Odio eu feugiat pretium nibh ipsum consequat nisl. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Sagittis id consectetur purus ut faucibus.</p>
         </div>
@@ -36,25 +39,34 @@
       <h1 id="work"><span id="portfolio-anchor"></span>Portfolio</h1>
       <div class="flex-container">
 
-        <a href="https://andcooke.github.io/mini-project-1/" target="_blank" class="flex-item project-1">
+        <a role="img" aria-label="screenshot of contact landing page" href="https://andcooke.github.io/mini-project-1/" target="_blank" class="flex-item project-1">
           <div><h2>Contact Landing Page</h2></div>
         </a>
 
-        <a href="#" class="flex-item project-2">
-          <h2>2</h2>
+        <a role="img" aria-label="number 2" href="#" class="flex-item project-2">
+          <div><h2>2</h2></div>
         </a>
 
-        <a role="img" aria-label="" href="#" class="flex-item project-3">
-          <h2>3</h2>
+        <a role="img" aria-label="number 3" href="#" class="flex-item project-3">
+          <div><h2>3</h2></div>
         </a>
 
-        <a href="#" class="flex-item project-4">
-            <h2 >4</h2>
-         </a>
-
-        <a href="#" class="flex-item project-5">
-            <h2>5</h2>
+        <a role="img" aria-label="number 4" href="#" class="flex-item project-4">
+          <div><h2 >4</h2></div>
         </a>
+
+        <a role="img" aria-label="number 5" href="#" class="flex-item project-5">
+          <div><h2>5</h2></div>
+        </a>
+
+        <a role="img" aria-label="number 6" href="#" class="flex-item project-6">
+          <div><h2>6</h2></div>
+      </a>
+
+
+      <a role="img" aria-label="number 7" href="#" class="flex-item project-5">
+        <div><h2>7</h2></div>
+    </a>
 
       </div>
      </section>
@@ -72,7 +84,7 @@
     </section>
 
   </main>
-  <footer><span>&copy; 2022 Andrew Cooke</span></footer>
+  <footer><span>&copy; 2022 A. C.</span></footer>
 </body>
 
 </html>
